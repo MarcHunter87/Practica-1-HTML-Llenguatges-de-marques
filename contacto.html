@@ -16,9 +16,38 @@
         </nav>
     </header>
     
-    <h1> </h1>
-    <img src="https://i.blogs.es/ff4f41/elqk-v1wmauw09m/1366_2000.jpg" alt="Imagen para inicio" width="1000" height="500">
-    <p></p>
+      <h1>Formulario de Contacto</h1>
+    <p style="font-size: 20px";>Si tenéis alguna queja, estamos dispuestos a valorar vuestra opinión para mejorar esta página web.</p>
+      <form method="post" action="enviar.php">
+        <table>
+            <tr>
+              <td><label for="nombre">Nombre:</label></td>
+              <td><input type="text" id="nombre" name="nombre" required></td>
+            </tr>
+            <tr>
+              <td><label for="mail">Mail:</label></td>
+              <td><input type="email" id="mail" name="mail" required></td>
+            </tr>
+            <tr>
+              <td><label for="fecha">Fecha:</label></td>
+              <td><input type="date" id="fecha" name="fecha" required></td>
+            </tr>
+            <tr>
+              <td><label for="descripcion">Descripción:</label></td>
+              <td><textarea id="descripcion" name="descripcion" rows="5" required></textarea></td>
+            </tr>
+            <tr>
+              <td><label for="fichero">Adjuntar fichero:</label></td>
+              <td><input type="file" id="fichero" name="fichero"></td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <button type="reset">Resetear</button>
+                <button type="submit">Enviar</button>
+              </td>
+            </tr>
+        </table>
+      </form>
     
     <footer>
     <div class="footer-bottom">
